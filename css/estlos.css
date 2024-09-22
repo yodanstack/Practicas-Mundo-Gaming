@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.page__principal {
+    background-image: url(../imagenes/360_F_101052491_D8WlkJsZclF5kO8LsA7AstXI9Ir4iuFl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu__navegacion {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background: rgba(65, 64, 64, 0.582);
+    border-bottom: 2px solid gray;
+}
+
+.barra__nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.barra__nav nav {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.barra__nav nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.barra__nav nav ul li {
+    padding: 0px 15px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    list-style: none;
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin-right: 5px;
+    width: 110px;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 15px;
+ }
+
+
+.barra__nav nav ul li a {
+    text-decoration: none;
+}
+
+.barra__nav nav ul li:hover {
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.menu__navegacion img {
+    margin-left: 1.5%;
+    width: 90px;
+    height: 90px;
+    transition: all 2s;
+}
+
+@media screen and (max-width: 320px) {
+    .barra__nav{
+        font-size: 10px;
+        flex-direction: column;
+        display:grid;
+        border: none;
+    }
+
+    .cuerpo__pagina__prin p{
+        width: 300px;
+        height: 400px;
+        font-size: 10px;
+    }
+}   
+
+
+.menu__navegacion img:hover {
+    transform: scale(1.1);
+}
+
+.menu__navegacion .bar__navegacion ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+.barra__nav button:hover {
+    background-color: gray;
+
+}
+
+/*
+Slide
+*/
+#carouselExampleIndicators {
+    display: flex;
+    justify-content: center;
+    margin: 10px 30px 10px 30px;
+}
+
+.carousel-inner .carousel-item img {
+    height: 450px;
+}
+
+/*Cuerpo de la pagina principal
+*/
+
+.cuerpo__pagina__prin {
+    height: 60%;
+    width: 80%;
+    background-color: rgba(34, 34, 34, 0.877);
+    margin: auto;
+    margin-top: 120px;
+    padding: 30px;
+    display: flex;
+}
+
+.cuerpo__pagina__prin p {
+    font-family: PMingLiU-ExtB;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.cuerpo__pagina__prin a {
+    color: white;
+}
+
+.cuerpo__pagina__prin strong {
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+.cuerpo__pagina__prin img {
+    height: 30%;
+    width: 30%;
+    margin-right: auto;
+}
+
+
+.page__principal h2 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*
+productos
+*/
+
+.container__rotativas {
+    background-color: rgba(192, 189, 189, 0.61);
+    display: flex;
+    overflow: hidden;
+    height: 250px;
+}
+
+.container__rotativas img {
+    margin-top: 15px;
+    padding: 0 15px;
+    height: 170px;
+    width: 170px;
+    animation: scroll 20s linear infinite;
+    width: calc(15px * 12);
+}
+
+.container__rotativas img:hover {
+    cursor: pointer;
+}
+
+
+@keyframes scroll {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/*
+pagina de cotizaciones
+*/
+.Cotiz__tattoo {
+    background: linear-gradient(black, gray);
+    background-repeat: no-repeat;
+}
+
+.container___page {
+    margin-top: 20px;
+}
+
+.container___page h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-align: center;
+}
+
+.container___page p {
+    color: white;
+    justify-content: center;
+    margin: 10px 50px 10px 50px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section__input {
+    padding: 4px 0px 4px 0px;
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(75, 75, 75, 0.669);
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+}
+
+.section__input form {
+    margin: 10px 10px 10px 10%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section__input input {
+    border-radius: 7px;
+    height: 40px;
+    width: 400px;
+    border: none;
+    margin: 0px 0px 10px 0px;
+    margin-left: 90px;
+}
+
+.btn__input {
+    margin-left: 250px;
+}
+
+
+.btn__input button {
+    width: 80px;
+    height: 40px;
+    margin: 0px 20px 0px 0px;
+    border-radius: 5px;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.btn__input button:hover {
+    background-color: gray;
+}
+
+/*
+Insumos
+*/
+
+.insumos__page {
+    background: linear-gradient(black, gray);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.menu__navegacion.buscador input {
+    border-radius: 30px;
+}
+
+.insumos__page h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 45px;
+    font-style: oblique;
+}
+
+
+/*
+Aprender a tatuar
+*/
+.curso__tatto {
+    background: linear-gradient(black, gray);
+    background-size: 400%;
+}
+
+.encabezado__curso {
+    background-color: rgba(0, 0, 0, 0.174);
+    display: flex;
+}
+
+.encabezado__curso img {
+    height: 120px;
+}
+
+.encabezado__curso h1 {
+    color: white;
+    font-size: 60px;
+    margin-left: 350px;
+    margin-top: 30px;
+    font-family: PMingLiU-ExtB;
+    font-style: italic;
+}
+
+.encabezado__curso button {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid gray;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 90px;
+}
+
+.encabezado__curso button a {
+    color: gray;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.encabezado__curso button:hover {
+    background-color: rgba(69, 69, 71, 0.297);
+}
+
+.intro__curso {
+    margin: 10px 10px 10px 55px;
+    width: 90%;
+    height: auto;
+    border: 4px solid rgb(25, 25, 25);
+    border-radius: 10px;
+    background-color: rgba(75, 75, 75, 0.669);
+    backdrop-filter: blur(80px);
+}
+
+.intro__curso h2 {
+    color: white;
+    margin-left: 10px;
+}
+
+.cuerpo__curso p {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 5px 5px 5px;
+    font-size: 20px;
+}
+
+.cuerpo__curso h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.section__curso input {
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 0px 0 50px;
+}
+
+.section__curso input:hover {
+    background-color: gray;
+}
+
+/*
+Galeria de Tatuajes
+*/
+
+.navegator__page {
+    background-color: rgba(128, 128, 128, 0.256);
+    width: 210px;
+    height: 110px;
+    margin: 10px 0 5px 20px;
+    border: 2px solid rgb(82, 80, 80);
+    border-radius: 5px;
+}
+
+.navegator__page a {
+    color: white;
+    margin: 3px 2px 1px 3px;
+    list-style: none;
+}
+
+.galeria__tattoo {
+    background: linear-gradient(black, gray);
+}
+
+.galery__tatoos {
+    background-color: rgba(123, 121, 121, 0.338);
+    backdrop-filter: blur(80px);
+    border: 2px solid rgb(57, 56, 56);
+    margin: 40px 20px 20px 20px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.galeria__tattoo.realismo_black_gray {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.realismo_black_gray img {
+    width: 280px;
+    height: 290px;
+    transition: all 3s;
+    margin: 2px 2px 2px 2px;
+}
+
+.realismo_black_gray img:hover {
+    transform: scale(1.1);
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    background-color: rgba(174, 170, 170, 0.511);
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 3px solid rgb(71, 69, 69);
+    font-size: 20px;
+    transition: all 3s;
+}
+
+#backToTopBtn:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+/*
+Tatuadores
+*/
+
+.tatuadores_page {
+    background: linear-gradient(black, gray);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.tatuadores_page h1 {
+    color: white;
+    font-family: PMingLiU-ExtB;
+    text-align: center;
+    margin: 30px 0px 20px 0px;
+
+}
+
+.tatuadores_page p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin: 10px 30px 10px 30px;
+}
+
+.tatuadores_page-dos {
+    border: 5px solid rgb(37, 36, 36);
+    background-color: rgba(255, 255, 255, 0.644);
+    margin: 20px 20px 0px 20px;
+    border-radius: 4px;
+    display: flex;
+}
+
+.tatuador_uno {
+    border: 3px solid black;
+    width: 120px;
+    height: 150px;
+    margin: 5px 30px 5px 20px;
+    border-radius: 60px;
+}
+
+.tatuador_dos {
+    border: 3px solid black;
+    width: 120px;
+    height: 150px;
+    margin: 5px 5px 5px 20px;
+    border-radius: 60px;
+}
+
+/*
+Creacion de cuenta 
+*/
+
+.creacion__cuenta {
+    background-image: url(../imagenes/360_F_101052491_D8WlkJsZclF5kO8LsA7AstXI9Ir4iuFl.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.heder button {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid gray;
+    margin: 20px 0px 0px 20px;
+}
+
+.heder button:hover {
+    background-color: gray;
+    backdrop-filter: blur(80px);
+}
+
+.heder button a {
+    color: rgb(173, 172, 172);
+    font-size: 30px;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 550px;
+    margin: 3% 10% 10% 30%;
+    border-radius: 10px;
+    backdrop-filter: invert(90%);
+}
+
+.wrapper h2 {
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper .input-box {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 200%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border: 2px solid gray;
+    justify-content: start;
+    align-items: start;
+}
+
+.input-box input::placeholder {
+    color: rgb(94, 92, 92);
+}
+
+.wrapper button {
+    width: 100px;
+    height: 50px;
+    margin: 15px 0 0 5px;
+    border-radius: 10px;
+    background-color: gray;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.wrapper button:hover {
+    background-color: rgb(140, 137, 137);
+}
+
+/*
+Iniciar secion
+*/
+
+.log_in {
+    background-image: url(../imagenes/people-adult-one-women.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container__log-in {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    border: 3px solid rgb(53, 52, 52);
+    border-radius: 30px;
+    margin: 60px 20px 20px 150px;
+    background-color: rgba(128, 128, 128, 0.29);
+    backdrop-filter: blur(100%);
+}
+
+.image_log-in img {
+    height: 500px;
+    width: 500px;
+    border-radius: 30px 0 0px 30px;
+}
+
+.log__in {
+    display: flex;
+    flex-direction: column;
+}
+
+.log__in h1 {
+    color: rgb(97, 97, 97);
+    margin: 70px 5px 20px 70px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.log__in input {
+    width: 400px;
+    height: 40px;
+    margin: 10px 5px 10px 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(57, 57, 57);
+    background: rgba(178, 177, 177, 0.457);
+}
+
+.log__in input::placeholder {
+    color: rgb(34, 33, 33);
+}
+
+.remember-forgot input {
+    margin: 10px 3px 0 40px;
+    width: 20px;
+    height: 20px;
+}
+
+.remember-forgot a {
+    text-decoration: underline;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.ingreso__usuario button {
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 20px 10px 10px 90px;
+    background: rgb(194, 192, 192);
+    border: none;
+    color: rgb(46, 46, 46);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ingreso__usuario button:hover {
+    background-color: gray;
+}
+
+.register-link {
+    display: flex;
+}
+
+.register-link p {
+    color: rgb(46, 46, 46);
+    font-size: 20px;
+    margin: 10px 0 0 50px;
+}
+
+.register-link a {
+    color: rgb(46, 46, 46);
+    font-size: 20px;
+    margin: 10px 0 0 5px;
+    text-decoration: underline;
+}
+
+.Cotiz__tattoo {
+    background-color: rgba(128, 128, 128, 0.29);
+    backdrop-filter: blur(100%);
+    background-size: cover;
+}
